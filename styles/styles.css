@@ -1,0 +1,35 @@
+
+body{
+    background-color: rgb(122, 50, 76);
+}
+
+hr{
+    background-color: #F2DEBA;
+    border-style: none;
+    height: 3px;
+}
+
+.upper_card{
+    text-align: center;
+    color: #F2DEBA;
+}
+
+h1.name{
+    margin-bottom: 5px;
+}
+
+
+
+a.contact{
+    color: rgb(190, 94, 245);
+}
+a.contact:hover{
+    color: rgb(125, 48, 170);
+}
+
+a.history{
+    color: rgb(86, 50, 184);
+}
+a.history:hover{
+    color: rgb(54, 30, 119);
+}

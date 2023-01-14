@@ -3,21 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
-    <div class="Upper Card" style="text-align: center;">
-      <h1 align="center">Toprak Efe Akkılıç</h1>
-      <img src="images/avatar.png" height="256" width="256" alt="My photograph" align="center" />
-      <h2>Ozyegin University</h2>
-      <p>
-        <a href="contact.html">Contact Me</a>
-        <br> Majoring in Electrical Engineering <br>OzuRover Autonomy
-      </p>
+    <div class="upper_card">
+      <table align="center">
+        <tr>
+          <td>
+            <h1 class="name">Toprak Efe Akkılıç</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <hr></hr>
+          </td>
+        </tr>
+      </table>
+      <img src="images/avatar.png" height="256" width="256" alt="My photograph"/>
+      <h2 class="university">Ozyegin University</h2>
+      <a class="contact" href="contact.html" style="font-size: 29px;">Contact Me</a>
+      <table align="center">
+        <tr>
+          <td>
+            Majoring in Electrical Engineering
+          </td>
+        </tr>
+        <tr>
+          <td>
+            OzuRover Autonomy
+          </td> 
+        </tr>
+      </table>
     </div>
-    <hr size="2" noshade="true">
-    <div class="history" style="text-align: left">
-      <table cellpadding="50" valign="top">
+
+    <hr size="100%" noshade="true">
+
+    <div class="history" style="text-align: left;">
+      <table cellpadding="50" valign="top" style="border-radius: 1.5vh; background-color: rgb(201, 132, 116)">
         <tbody>
           <tr>
             <td valign="top">
@@ -56,13 +80,13 @@
                   <tr>
                     <td> DeepLearning.AI </td>
                     <td>
-                      <a href="https://www.coursera.org/account/accomplishments/verify/UJZ6R2XPW7PS">Supervised Machine Learning: Regression and Classification</a>
+                      <a class="history" href="https://www.coursera.org/account/accomplishments/verify/UJZ6R2XPW7PS">Supervised Machine Learning: Regression and Classification</a>
                     </td>
                   </tr>
                   <tr>
                     <td> DeepLearning.AI </td>
                     <td>
-                      <a href="https://www.coursera.org/account/accomplishments/verify/ZEMHM9MQ6W6G">Neural Networks and Deep Learning</a>
+                      <a class="history" href="https://www.coursera.org/account/accomplishments/verify/ZEMHM9MQ6W6G">Neural Networks and Deep Learning</a>
                     </td>
                   </tr>
                 </tbody>
@@ -137,23 +161,27 @@
               </table>
             </td>
             <td valign="top">
-              <table>
+              <table cellspacing="0" style="border-spacing: 0px;">
                 <thead>
                   <tr>
-                    <th valign="top"> Social Media </th>
+                    <th colspan="2" valign="top"> Social Media </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
                       <img src="images/linkedin.png" height="32" width="32" alt="LinkedIn Icon">
-                      <a href="https://tr.linkedin.com/in/toprak-efe-akkilic-841132250?trk=people_directory">LinkedIn</a>
+                    </td>
+                    <td>
+                      <a class="history" href="https://tr.linkedin.com/in/toprak-efe-akkilic-841132250?trk=people_directory">LinkedIn</a>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <img src="images/arstation.png" height="32" width="32" alt="Artstation Icon">
-                      <a href="https://www.artstation.com/user-7611838">ArtStation</a>
+                    </td>
+                    <td>
+                      <a class="history" href="https://www.artstation.com/user-7611838" style="align-items: center;">ArtStation</a>
                     </td>
                   </tr>
                 </tbody>
