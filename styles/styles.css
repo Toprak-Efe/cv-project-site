@@ -1,35 +1,92 @@
-
+/****************************************************************************************************TAG STYLES****************************************************************************************************/
 body{
-    background-color: rgb(122, 50, 76);
+    background-image: url(../images/background.jpg);
 }
 
-hr{
-    background-color: #F2DEBA;
-    border-style: none;
-    height: 3px;
+a{
+    color: rgb(231, 215, 65);
+    text-decoration: none;
+}
+
+a:hover{    
+    color:aliceblue
+}
+
+a:active{    
+    color:rgb(80, 80, 80)
+}
+
+/****************************************************************************************************CLASS STYLES****************************************************************************************************/
+.overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.history{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: top;
+    text-align: left;
 }
 
 .upper_card{
     text-align: center;
-    color: #F2DEBA;
+    padding-right: 2em;
+    padding-left: 2em;  
+    padding-bottom: 1em;
+    background-color: #2b2b2ca8;
+    border-radius: 1em;
+    color: aliceblue;
 }
 
-h1.name{
-    margin-bottom: 5px;
+
+.panel{
+    margin: 0px;
+    padding: 5px;
+    color: rgb(202, 202, 202);
+    background-color: #2b2b2ca8;
+    border-radius: 10px;
+}
+.panel th{
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.panel a{
+    color: rgb(231, 215, 65);
+    text-decoration: none;
+    text-shadow: none;
+}
+.panel a:hover{    
+    color:aliceblue
+}
+.panel a:active{    
+    color:rgb(80, 80, 80)
 }
 
 
-
-a.contact{
-    color: rgb(190, 94, 245);
-}
-a.contact:hover{
-    color: rgb(125, 48, 170);
+.upper_card .name{
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-a.history{
-    color: rgb(86, 50, 184);
+.contact{
+    margin: 0px;
+    padding: 5px;
+    color: rgba(202, 202, 202, 0.26);
+    background-color: #2b2b2c7e;
+    border-radius: 10px;
+    color: aliceblue;
+    flex: 1;
 }
-a.history:hover{
-    color: rgb(54, 30, 119);
+
+.site{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.Info{
+    background-color: #2b2b2c7e;
 }
