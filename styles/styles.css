@@ -1,92 +1,174 @@
-/****************************************************************************************************TAG STYLES****************************************************************************************************/
 body{
-    background-image: url(../images/background.jpg);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(133, 133, 133);
+    margin: 0;
 }
-
 a{
-    color: rgb(231, 215, 65);
-    text-decoration: none;
+    color: rgb(153, 153, 153);
 }
 
-a:hover{    
-    color:aliceblue
+.container{
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    background-color: #302d31;
 }
 
-a:active{    
-    color:rgb(80, 80, 80)
-}
-
-/****************************************************************************************************CLASS STYLES****************************************************************************************************/
-.overlay{
+.left-bar{
+    z-index: 1;
+    background-color: rgb(47, 49, 49);
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1em;
-}
-.history{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    align-items: top;
-    text-align: left;
+    width: 13.5%;
+    height: 100%;
 }
 
-.upper_card{
+.grid-2-2{
+    position: relative;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-2-1{
+    position: relative;
+    grid-row: span 4;
+}
+
+
+.right-page{
+    width: 86.5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 10%);
+    background: radial-gradient(rgba(173, 173, 173, 0.144) 1px, transparent 1px);
+    background-size : 10px 10px;
+}
+
+.card{
+    background-color: rgb(57, 59, 59);
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.profile{
+    margin-top: 10px;
     text-align: center;
-    padding-right: 2em;
-    padding-left: 2em;  
-    padding-bottom: 1em;
-    background-color: #2b2b2ca8;
-    border-radius: 1em;
-    color: aliceblue;
 }
 
-
-.panel{
-    margin: 0px;
-    padding: 5px;
-    color: rgb(202, 202, 202);
-    background-color: #2b2b2ca8;
-    border-radius: 10px;
-}
-.panel th{
-    color: rgb(255, 255, 255);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.panel a{
-    color: rgb(231, 215, 65);
-    text-decoration: none;
-    text-shadow: none;
-}
-.panel a:hover{    
-    color:aliceblue
-}
-.panel a:active{    
-    color:rgb(80, 80, 80)
+.media{
+    padding-bottom: 10px;
 }
 
+#name{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 170%;
+}
 
-.upper_card .name{
-    color: rgb(255, 255, 255);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.photograph{
+    position: relative;
+    align-content: center;
+}
+
+.photograph .avatar{
+    width: 50%;
+}
+
+#station{
+    color: rgb(165, 68, 97);
+}
+
+#station_occupation{
+    margin-top: -15px;
+    padding-bottom: 6px;
+}
+
+.media{
+    text-align: center;
+}
+
+.media h2{
+    font-size: 20px;
+}
+
+.media_links{
+    margin: 9px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .contact{
-    margin: 0px;
-    padding: 5px;
-    color: rgba(202, 202, 202, 0.26);
-    background-color: #2b2b2c7e;
-    border-radius: 10px;
-    color: aliceblue;
-    flex: 1;
+    text-align: center;
 }
 
-.site{
-    color: rgb(255, 255, 255);
+.contact h2{
+    font-size: 20px;
+}
+
+.contact_info{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 32px 150px;
+    grid-column-gap: 10px;
+}
+
+.icon_con{
+    filter: brightness(0%);
+}
+
+.ddot{
+    color: rgb(70, 70, 70);
+    user-select: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.panel{
+    margin: 10px;
+    background-color: rgba(57, 59, 59, 0.479);
+    border: 1px solid rgb(70, 70, 70);
+    opacity: 100%;
+}
+
+.table_cv{
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    border-spacing: 10px;
+}
+
+.table_cv th{
+    color: rgb(182, 182, 182);
+}
+
+.cover{
+    user-select: none;
+    background-color: rgb(57, 59, 59);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
 }
-.Info{
-    background-color: #2b2b2c7e;
+
+.cover:hover{
+    background-color: rgba(57, 59, 59, 0);
+    color: #302d3100;
+    pointer-events: initial;
 }
+
